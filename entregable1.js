@@ -1,14 +1,13 @@
 
 class ProductManager {
     static id = 0;
-    products = [];
-
-  
+      
     constructor() {
-      ProductManager.id++;
+      this.products = [];
     }
   
     addProduct(title, description, price, thumbnail, code, stock) {
+      ProductManager.id++;
       const productExists = this.products.some((p) => p.code === code);
       if (productExists) {
         console.error(`Error: El código ${code} ya existe.`);
@@ -49,3 +48,5 @@ class ProductManager {
   
   productManager1.getProducts();
   productManager1.getProductById(1);
+
+  
