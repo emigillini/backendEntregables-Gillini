@@ -9,6 +9,7 @@ const utf ="utf-8"
       this.products = [];
       this.path=path
     }
+
   
       addProduct(title, description, price, thumbnail, code, stock) {
       ProductManager.id++;
@@ -32,6 +33,7 @@ const utf ="utf-8"
     console.log(`Se agregó el producto "${title}" al archivo ${path}.`);
   
     }
+
   
      getProducts() {
 
