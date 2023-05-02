@@ -10,9 +10,6 @@ const utf ="utf-8"
       this.path=path
     }
 
-    getConnection(){
-      
-    }
   
       addProduct(title, description, price, thumbnail, code, stock) {
       ProductManager.id++;
